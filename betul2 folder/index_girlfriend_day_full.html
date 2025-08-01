@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy National Girlfriend Day!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #ffd6e0, #e0c3fc);
+      min-height: 100vh;
+      overflow-x: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      max-width: 600px;
+      padding: 20px;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5em;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+
+    .start-btn {
+      padding: 12px 24px;
+      font-size: 1em;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .start-btn:hover {
+      background-color: #e055a1;
+    }
+
+    .card {
+      background: white;
+      border-radius: 25px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 550px;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      display: none;
+    }
+
+    .title {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.2em;
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    .heart {
+      font-size: 3em;
+      animation: pulse 2s infinite;
+    }
+
+    .photo {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 15px;
+      margin: 20px auto;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .message {
+      margin-top: 20px;
+      font-size: 1.1em;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-style: italic;
+      color: #888;
+    }
+
+    .heart-float {
+      position: absolute;
+      font-size: 24px;
+      color: #ff69b4;
+      animation: float 5s linear infinite;
+    }
+
+    .spotify-button {
+      margin-top: 20px;
+      display: inline-block;
+      background: #1db954;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: background 0.2s;
+    }
+
+    .spotify-button:hover {
+      background: #17a44b;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes float {
+      0% {
+        bottom: -20px;
+        opacity: 0;
+        transform: translateX(0);
+      }
+      50% {
+        opacity: 1;
+        transform: translateX(20px);
+      }
+      100% {
+        bottom: 100vh;
+        opacity: 0;
+        transform: translateX(-20px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- YouTube Autoplay Embed (hidden) -->
+  <iframe width="0" height="0" 
+        src="https://www.youtube.com/embed/5L2G8PBH1iY?autoplay=1&loop=1&playlist=5L2G8PBH1iY" 
+        title="YouTube video" 
+        frameborder="0" 
+        allow="autoplay" 
+        allowfullscreen>
+</iframe>
+
+  <!-- INTRO SECTION -->
+  <div class="intro" id="intro">
+    <h1>Happy National Girlfriend Day!</h1>
+    <button class="start-btn" onclick="startMessage()">Open My Surprise 💌</button>
+  </div>
+
+  <!-- MAIN CARD SECTION -->
+  <div class="card" id="main">
+    <div class="heart">💖</div>
+    <div class="title">Happy National Girlfriend Day!</div>
+
+    <img src="foto.jpeg" alt="Couple Photo" class="photo" />
+
+    <div class="message">
+      Dear love, Katanya hari ini National Girlfriend Day.<br><br>
+      Harusnya sih aku bisa bilang sesuatu yang manis, kayak ‘aku kangen kamu’ atau ‘semangat di sana ya’.<br>
+  Tapi kenyataannya… aku lagi nggak bisa bilang apa-apa yang gitu-gitu sekarang.<br><br>
+
+  Kita baru LDR dua hari, tapi rasanya udah kayak ditampar kenyataan.<br>
+  Aku nggak ngerti, kenapa bisa secepat itu kamu lakuin hal yang aku bahkan susah buat maafin.<br><br>
+
+  Sekarang, buat manggil kamu ‘sayang’ aja rasanya… terlalu jauh.<br>
+  Bukan karena aku berhenti sayang. Tapi karena aku masih kecewa.<br><br>
+
+  Aku cuma pengen jujur aja di hari ini, karena kalau aku pura-pura bahagia, itu bukan aku.<br>
+  Jadi ya… gini aja dulu. Aku nggak tahu besok kayak gimana, tapi hari ini, ya ini aku yang baru.<br><br>
+      That’s all I can say for now.
+Thank you for still staying with me. 💕
+I just hope everything you said — about no one ever replacing me — was the truth.
+    </div>
+
+    <a href="https://open.spotify.com/track/1RaJdXCj61oSRUUciGKoWe" target="_blank" class="spotify-button">
+      <h3>Bergema Sampai Selamanya</h3>
+      <p>Nadhif Basalamah</p>
+      Play on Spotify 🎶
+    </a>
+
+    <div class="footer">— With all my heart, Your Person</div>
+  </div>
+
+  <script>
+    function startMessage() {
+      document.getElementById('intro').style.display = 'none';
+      document.getElementById('main').style.display = 'block';
+    }
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart-float');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 4 + Math.random() * 3 + 's';
+      heart.innerHTML = ['💖','💘','💝','💕','💞'][Math.floor(Math.random()*5)];
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 7000);
+    }
+    setInterval(createHeart, 1000);
+  </script>
+</body>
+</html>
